@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#cccc"
+    tools:context=".MainActivity"
+    >
+    <TextView
+        android:id="@+id/progressNumber"
+        android:text="1/10"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="60dp"
+        />
+
+    <TextView
+        android:id="@+id/questionTitle"
+        android:text="Android question title:"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        />
+
+    <TextView
+        android:id="@+id/questionDetail"
+        android:text="Question details go here"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        />
+
+    <Button
+        android:id="@+id/option1"
+        android:background="@drawable/normal"
+        android:text="Option 1"
+        android:onClick="onClickOption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        />
+
+    <Button
+        android:id="@+id/option2"
+        android:background="@drawable/normal"
+        android:text="Option 2"
+        android:onClick="onClickOption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:text="NEXT"
+        android:onClick="onClickNextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        />
+</LinearLayout>
